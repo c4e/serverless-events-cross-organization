@@ -27,10 +27,10 @@ custom:
       organizationId: "o-x09ij3ysgl"
 ```
 
-| Parameter Name | Type | Default Value | Description |
+| Parameter Name | Type | Description |
 | --- | --- | --- |
-| sendEvents | Array |  | List of accounts |
-| pattern (required) | Object |  | Pattern to filter events |
-| source (required) | Array |  | List of sources to filter |
-| receiveEvents | Object |  | Options to allow receive events |
-| organizationId (required) | String |  | Organization Id |
+| sendEvents | Array | List of accounts |
+| pattern (required) | Object | Pattern to filter events |
+| source (required) | Array | List of sources to filter |
+| receiveEvents | Object | Options to allow receive events |
+| organizationId (required) | String | Organization Id |
