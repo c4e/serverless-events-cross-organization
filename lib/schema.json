@@ -1,0 +1,50 @@
+{
+  "id": "eventBridgeCrossOrganization",
+  "type": "object",
+  "properties": {
+    "sendEvents": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "targetAccountId": {
+            "type": "string"
+          },
+          "ruleName": {
+            "type": "string"
+          },
+          "pattern": {
+            "type": "object",
+            "properties": {
+              "source": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "detail-type": {
+                "type": "string"
+              }
+            },
+            "required": ["source"]
+          }
+        },
+        "required": [
+          "targetAccountId",
+          "pattern"
+        ]
+      }
+    },
+    "receiveEvents": {
+      "type": "object",
+      "properties": {
+        "organizationId": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "organizationId"
+      ]
+    }
+  }
+}
