@@ -1,6 +1,6 @@
 {
   "name": "serverless-events-cross-organization",
-  "version": "v0.2-alpha",
+  "version": "v1.0.2-alpha",
   "description": "Add roles, rules, policies to send and receive events cross organization",
   "main": "lib/index.js",
   "scripts": {
