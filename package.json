@@ -1,15 +1,19 @@
 {
   "name": "serverless-events-cross-organization",
   "version": "1.0.0",
-  "description": "",
+  "description": "Add roles, rules, policies to send and receive events cross organization",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --env node",
+    "test:watch": "jest --env node --watch"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "jsonschema": "^1.2.6",
     "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "jest": "^26.0.1"
   }
 }
