@@ -9,8 +9,28 @@ Install the package with npm: `npm install serverless-events-cross-organization`
 
 ```yaml
 plugins:
-  - serverless-pseudo-parameters
+  - serverless-events-cross-organization
 ```
 
 Usage
 -----
+
+```yaml
+custom:
+  eventBridgeCrossOrganization:
+    sendEvents:
+      - targetAccountId: "3045131172291"
+        pattern:
+          source: 
+            - "company.service"
+    receiveEvents:
+      organizationId: "o-x09ij3ysgl"
+```
+
+| Parameter Name | Type | Default Value | Description |
+| --- | --- | --- |
+| sendEvents | Array |  | List of accounts |
+| pattern (required) | Object |  | Pattern to filter events |
+| source (required) | Array |  | List of sources to filter |
+| receiveEvents | Object |  | Options to allow receive events |
+| organizationId (required) | String |  | Organization Id |
