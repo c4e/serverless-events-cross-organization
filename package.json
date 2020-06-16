@@ -1,17 +1,25 @@
 {
   "name": "serverless-events-cross-organization",
-  "version": "v1.0.3-alpha",
+  "version": "v1.0.4-alpha",
   "description": "Add roles, rules, policies to send and receive events cross organization",
   "main": "lib/index.js",
   "scripts": {
     "test": "jest --env node",
     "test:watch": "jest --env node --watch"
   },
-  "author": "",
+  "author": {
+    "name": "Carlos Rojas",
+    "email": "rl.carlos@gmail.com",
+  },
   "license": "ISC",
   "dependencies": {
     "jsonschema": "^1.2.6",
     "lodash": "^4.17.15"
+  },
+  "homepage": "https://github.com/c4e/serverless-events-cross-organization",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/c4e/serverless-events-cross-organization.git"
   },
   "devDependencies": {
     "jest": "^26.0.1"
