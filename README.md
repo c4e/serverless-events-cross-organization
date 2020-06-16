@@ -1,4 +1,6 @@
+![Node.js Package](https://github.com/c4e/serverless-events-cross-organization/workflows/Node.js%20Package/badge.svg)
 Serverless Eventbridge Cross Organization
+
 --------------------------------
 
 Add roles, rules, policies to send and receive events cross organization
