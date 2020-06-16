@@ -1,4 +1,5 @@
 ![Node.js Package](https://github.com/c4e/serverless-events-cross-organization/workflows/Node.js%20Package/badge.svg)
+
 Serverless Eventbridge Cross Organization
 
 --------------------------------
