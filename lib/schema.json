@@ -40,10 +40,14 @@
       "properties": {
         "organizationId": {
           "type": "string"
+        },
+        "statementId": {
+          "type": "string"
         }
       },
       "required": [
-        "organizationId"
+        "organizationId",
+        "statementId"
       ]
     }
   }
