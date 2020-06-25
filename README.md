@@ -28,6 +28,7 @@ custom:
           source: 
             - "company.service"
     receiveEvents:
+      statementId: "unique-statement-id"
       organizationId: "o-x09ij3ysgl"
 ```
 
