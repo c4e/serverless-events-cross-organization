@@ -24,6 +24,7 @@ custom:
   eventBridgeCrossOrganization:
     sendEvents:
       - targetAccountId: "3045131172291"
+        region: 'eu-central-1'
         pattern:
           source: 
             - "company.service"
