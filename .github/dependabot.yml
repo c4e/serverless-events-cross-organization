@@ -1,0 +1,14 @@
+version: 2
+registries: 
+  npm-registry: 
+    type: npm-registry
+    url: https://npm.pkg.github.com/exporo
+    token: ${{ secrets.NPM_AUTH_TOKEN }}
+    replaces-base: true
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    registries: 
+      - npm-registry
+    schedule:
+      interval: "weekly"
