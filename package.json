@@ -1,6 +1,6 @@
 {
   "name": "@exporo/serverless-events-cross-organization",
-  "version": "v0.0.1",
+  "version": "v1.0.18-beta",
   "description": "Add roles, rules, policies to send and receive events cross organization",
   "main": "lib/index.js",
   "scripts": {
