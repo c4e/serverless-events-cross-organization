@@ -1,0 +1,25 @@
+# This workflow will run tests using node and then publish a package to GitHub Packages when a release is created
+# For more information see: https://help.github.com/actions/language-and-framework-guides/publishing-nodejs-packages
+
+name: Node.js Package
+
+on:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: Extract node version from .nvmrc
+        run: echo BUILD_NODE_VERSION=`cat .nvmrc` >> $GITHUB_ENV
+      - name: Setup node environment 
+        uses: actions/setup-node@v3
+        env:
+          NPM_AUTH_TOKEN: ${{ secrets.NPM_WRITE_TOKEN }}
+        with:
+          node-version: ${{ env.BUILD_NODE_VERSION }}
+          registry-url: https://npm.pkg.github.com/exporo
+      - run: npm ci
+      - run: npm test
